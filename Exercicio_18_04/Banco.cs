@@ -1,7 +1,6 @@
 ﻿namespace Exercicio_18_04;
 class Banco
 {   
-    //Funções originais do banco
 
     public int Numero {get; set;}
     private double Saldo { get;  set;}
@@ -24,7 +23,6 @@ class Banco
         return this.Saldo + this.Limite;
     }
 
-    //Nova função de empréstimo
 
     public double parcela {get; set;}
     public double valor {get; set;}

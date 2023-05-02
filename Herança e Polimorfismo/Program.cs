@@ -7,12 +7,12 @@ class Program
         FuncionarioN2 n2 = new FuncionarioN2();
         FuncionarioN3 n3 = new FuncionarioN3();
 
-        n1.Nome = "Ariany";
+        n1.Nome = "Daniel";
         n1.Idade = 16;
-        n2.Nome = "Santos";
-        n2.Idade = 17;
-        n3.Nome = "Andrade";
-        n3.Idade = 18;
+        n2.Nome = "Ariany";
+        n2.Idade = 16;
+        n3.Nome = "Danielle";
+        n3.Idade = 16;
         n3.Cargo = "Gerente";
         
         Console.WriteLine("Nome: " + n1.Nome + " -- Idade: " + n1.Idade + " -- Part: " +  (n1.Participacao()));

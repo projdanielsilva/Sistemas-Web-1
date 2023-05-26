@@ -8,13 +8,13 @@ class Program
         ContratoPessoaJuri juri = new ContratoPessoaJuri();
 
         fisica.Tipo = "Pessoa Física";
-        fisica.Nome = "Ariany";
+        fisica.Nome = "Daniel";
         fisica.Idade = 10;
         fisica.Cpf = 12345678910;
         fisica.Prazo = 10;
     //--------------------------------------------------//
         juri.Tipo = "Pessoa Jurídica";
-        juri.Nome = "Andrade";
+        juri.Nome = "Danielsilva";
         juri.Cnpj = 0006543210;
         juri.IE= 1234567890;
         juri.Prazo = 10;

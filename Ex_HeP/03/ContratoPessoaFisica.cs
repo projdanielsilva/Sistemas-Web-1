@@ -1,23 +1,25 @@
-class Contrato
+namespace _03;
+class ContratoPessoaFisica:Contrato
 {
-   public string? Tipo {get;set;}
+ public override double CalcularPrestacao()
 
-   public int Idade {get;set;}
-
-   public long Cnpj {get;set;}
-
-   public long Cpf {get;set;}
-
-   public int Prazo {get;set;}
-
-   public long inscricao {get;set;}
-
-   
-
-   
-
-
-   public virtual double CalcularPrestacao(){
-        return 1000;
+ {
+    if (Idade <= 30)
+    {
+        return ((base.CalcularPrestacao()/Prazo)+1);
     }
+    else if (Idade <= 40) 
+    {
+        return ((base.CalcularPrestacao()/Prazo)+2);
+    }
+    else if (Idade <= 50) 
+    {
+        return ((base.CalcularPrestacao()/Prazo)+3);
+    }
+    else 
+    {
+        return ((base.CalcularPrestacao()/Prazo)+4);
+    }
+}  
+
 }

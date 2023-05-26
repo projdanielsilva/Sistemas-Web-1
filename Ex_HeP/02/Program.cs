@@ -5,7 +5,7 @@ class Program
     {
        ContratoPessoaFisica fisica = new ContratoPessoaFisica();
 
-       fisica.Nome = "Ariany";
+       fisica.Nome = "Daniel";
        fisica.Email = "email@email.com";
        fisica.Cpf = "123.456.789-00";
        fisica.Idade = "16";
@@ -19,11 +19,11 @@ class Program
 
        ContratoPessoaJuri juri = new ContratoPessoaJuri();
 
-       juri.Nome = "Ariany";
+       juri.Nome = "Daniel";
        juri.Email = "email@email.com";
        juri.Cnpj = "00.123.000/0000-00";
        juri.IE = "0000.000.0000-00";
-       juri.NomeEmpresa = "Andrade";
+       juri.NomeEmpresa = "Etec";
        juri.Telefone = "(11) 99999-9999";
 
        Console.WriteLine("OS dados da Pessoa Juridica:");

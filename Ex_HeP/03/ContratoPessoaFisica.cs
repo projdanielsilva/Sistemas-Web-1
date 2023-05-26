@@ -1,31 +1,23 @@
-namespace _03;
-class ContratoPessoaFisica:Contrato
+class Contrato
 {
-  public string? Cpf {get;set;}
+   public string? Tipo {get;set;}
+
    public int Idade {get;set;}
+
+   public long Cnpj {get;set;}
+
+   public long Cpf {get;set;}
+
+   public int Prazo {get;set;}
+
+   public long inscricao {get;set;}
+
    
 
-   public override string MostraDados(){
+   
 
-    return base.MostraDados() + " - " +  this.Cpf + "-" + this.Idade;
- }
 
-    public override double CalcularPrestacao(double valor, int prazo)
-    {
-        double adicional = 0;
-        if (this.Idade <= 30){
-            adicional = 1;
-        }
-        else if (this.Idade <= 40){
-            adicional = 2;
-        }
-
-        else if (this.Idade <= 50){
-            adicional = 3;
-        }
-        else if (this.Idade > 50){
-            adicional = 4;
-        }
-        return base.CalcularPrestacao(valor, prazo)+ adicional;
+   public virtual double CalcularPrestacao(){
+        return 1000;
     }
 }
